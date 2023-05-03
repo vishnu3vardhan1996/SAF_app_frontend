@@ -1,0 +1,140 @@
+body {
+    /* background-color: #FFEC84; */
+    background-image: url("./images/registration_back_ground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    /* display: inline-block; */
+}
+
+.box {
+    /* width: 250px;
+    /* height: 750px; */
+    height: 750px;
+    background-color: white;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 10px;
+    width: 30ch;
+    overflow-wrap: break-word;
+    margin-top: 20px;
+    overflow: auto;
+    line-height: 1.5em;
+}
+
+.required {
+    color: red;
+}
+
+.cust_details {
+    color: blue;
+}
+
+.tr_alignment {
+    text-align: left;
+}
+
+.brand_name {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.28em;
+}
+
+.de_alignment {
+    text-align: right;
+}
+
+.de_alignment_received {
+    text-align: left;
+    color: blue;
+}
+
+.de_box {
+    position: absolute;
+    margin-top: 20px;
+    background-color: white;
+    margin-left: 40px;
+    display: inline-block;
+    padding: 10px;
+    width: 15ch;
+}
+
+.de_received_box {
+    position: absolute;
+    margin-top: 20px;
+    background-color: white;
+    margin-left: 220px;
+    display: inline-block;
+    padding: 10px;
+    width: 20ch;
+}
+
+/* table {
+    border-collapse: collapse; 
+    margin-top: 20px;
+} */
+
+td,
+th {
+    padding: 7.68px;
+}
+
+.fixed_text {
+    position: absolute;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 500px;
+    
+}
+
+.interest_section {
+    position: absolute;
+    display: inline-block;
+    margin-top: 20px;
+    /* font-size: 1em; */
+    margin-bottom: 50px;
+    /* bottom: 500px; */
+    margin-left: 500px;
+    padding: 10px;
+    background-color: white;
+    
+}
+
+.fixed_textarea_div {
+
+    height: 90px;
+    width: 600px;
+    font-size: 18px;
+    color: inherit;
+    background-color: white;
+    cursor: default;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    /* resize: none; */
+}
+
+.fixed_text_int {
+    position: absolute;
+    display: inline-block;
+    margin-top: 250px;
+    margin-left: 500px;
+}
+
+.fixed_textarea_div_int {
+    height: 310px;
+    width: 693px;
+    font-size: 18px;
+    color: inherit;
+    background-color: white;
+    cursor: default;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+/* height: 362px; width: 693px; */
+/* tr:not(:last-child) {
+    margin-bottom: 20px;
+} */
