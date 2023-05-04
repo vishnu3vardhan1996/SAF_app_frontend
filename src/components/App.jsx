@@ -7,7 +7,14 @@ import {PaymentClosing} from "./PaymentClosing";
 import {IndividualPaymentPage} from "./IndividualPaymentPage";
 import {InterestReceive} from "./InterestReceive";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {disableReactDevTools} from '@fvilers/disable-react-devtools';
 // import "../assets/styles.css";
+
+const platform = 'production';
+
+if (platform === 'production') {
+    disableReactDevTools();
+}
 
 function App() {
     return (<div>
