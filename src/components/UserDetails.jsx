@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import { SearchOptionSelect } from "./SearchOptionSelect";
+require('dotenv').config();
 
 function UserDetails() {
 
@@ -10,7 +11,7 @@ function UserDetails() {
     const [isEditable, setIsEditable] = useState(false);
 
     useEffect(() => {
-        fetch(`https://sri-abiramin-finance-business.onrender.com/customer_details/${name}`)
+        fetch(`${process.env.API_URL}/customer_details/${name}`)
             .then(res => res.json())
             .then(data => setUser(data))
             .catch(error => console.log(error));

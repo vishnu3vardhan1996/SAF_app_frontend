@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+require('dotenv').config();
 // import "../assets/styles.css";
 // import { SearchOptionSelect } from "./SearchOptionSelect";
 
@@ -51,7 +52,7 @@ function CustSearch() {
         setPaymentSelection(event.target.value);
     }
 
-    fetch('https://sri-abiramin-finance-business.onrender.com/customer_details/:name', {
+    fetch(`${process.env.API_URL}/customer_details/:name`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

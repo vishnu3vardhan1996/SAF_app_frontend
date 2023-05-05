@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+require('dotenv').config();
 // import "../assets/styles.css";
 // import UserDetails from "./UserDetails";
 
@@ -107,7 +108,7 @@ function CustomerDetails() {
         // Customer Number, Date, Amount, Name, Husband/Father Name, Address, Mobile number, 
         // Gold Details, Gold Grams, Gold Actual Value, Attender, Aadhar Number (optional).
         <div>
-            <form align="center" action="https://sri-abiramin-finance-business.onrender.com/registration" method="POST">
+            <form align="center" action={`${process.env.API_URL}/registration`} method="POST">
                 <table cellPadding="2" width="30%" align="left"
                     cellSpacing="2" style={{ paddingLeft: "100px" }}>
                     <thead>

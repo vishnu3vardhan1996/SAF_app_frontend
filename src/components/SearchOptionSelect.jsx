@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
+require('dotenv').config();
 
 function SearchOptionSelect(props) {
 
@@ -27,7 +28,7 @@ function SearchOptionSelect(props) {
 
     //Interest Details from DB
     useEffect(() => {
-        fetch(`/cust_update/${cardno}`)
+        fetch(`${process.env.API_URL}/cust_update/${cardno}`)
             .then(res => res.json())
             .then(data => setCardNoDetail(data))
             .catch(error => console.log(error));
@@ -64,7 +65,7 @@ function SearchOptionSelect(props) {
 
     let cardNoDetailsOfCust = props.CustomerNumber;
 
-    fetch('https://sri-abiramin-finance-business.onrender.com/cust_update/:cardno', {
+    fetch(`${process.env.API_URL}/cust_update/:cardno`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

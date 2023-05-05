@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+require('dotenv').config();
 
 function DenominationReceived(props) {
 
@@ -17,7 +18,7 @@ function DenominationReceived(props) {
 
     const cardNoDetailsOfCust = props.CustomerNumber;
 
-    fetch('https://sri-abiramin-finance-business.onrender.com/cust_update/:cardno', {
+    fetch(`${process.env.API_URL}/cust_update/:cardno`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
