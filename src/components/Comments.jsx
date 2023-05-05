@@ -11,7 +11,7 @@ function Comments(props) {
     function handleTextAreaOnchange(event) {
         const textChange = event.target.value;
         setTextAreaValue((preValue) => {
-            return { ...preValue, textChange }
+            return preValue, textChange
         })
     }
 
