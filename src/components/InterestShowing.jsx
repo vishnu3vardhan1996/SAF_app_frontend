@@ -15,10 +15,11 @@ function InterestShowing(props) {
     // function handleLatestInterestdateTransfer(latestInterestdate) {
     //     props.InterestTransfer(latestInterestdate);
     // }
+    const { InterestTransfer } = props;
 
     useEffect(() => {
-        props.InterestTransfer(latestInterestdate);
-      }, [latestInterestdate]);
+        InterestTransfer(latestInterestdate);
+      }, [InterestTransfer, latestInterestdate]);
 
       if(!interestTakenFromDB || !interestTakenFromDB[0]) {
         lengthOfArray = -1;
@@ -28,8 +29,8 @@ function InterestShowing(props) {
       }
 
     for (let i=0; i < lengthOfArray; i++) {
-        interestDisplay.push( "\n" + "Rs: " + interestTakenFromDB[1][i] + "/- " + " Interest Paid for month " + interestTakenFromDB[3][i] + " on " + interestTakenFromDB[0][i] );
-        if ((i + 1) == (lengthOfArray)) {
+        interestDisplay.push( "\n Rs: " + interestTakenFromDB[1][i] + "/- Interest Paid for month " + interestTakenFromDB[3][i] + " on " + interestTakenFromDB[0][i] );
+        if ((i + 1) === (lengthOfArray)) {
             latestInterestdate = interestTakenFromDB[3][i];
             // console.log(latestInterestdate);
         }
