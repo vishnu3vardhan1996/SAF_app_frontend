@@ -6,7 +6,7 @@ import { DenominationReceived } from "./DenominationReceived";
 import { Comments } from "./Comments";
 import { InterestReceive } from "./InterestReceive";
 import { InterestShowing } from "./InterestShowing";
-require('dotenv').config();
+import { apiURL } from "./App";
 
 function IndividualPaymentPage() {
 
@@ -76,7 +76,7 @@ function IndividualPaymentPage() {
     }
 
     useEffect(() => {
-        fetch(`${process.env.API_URL}/cust_update/${cardno}`)
+        fetch(`${apiURL}/cust_update/${cardno}`)
             .then(res => res.json())
             .then(data => setCardNoDetail(data))
             .catch(error => console.log(error));
@@ -119,7 +119,7 @@ function IndividualPaymentPage() {
     }
 
     function handletextAreaDone(textAreaValue) {
-        fetch(`https://sri-abiramin-finance-business.onrender.com/cust_update/${cardno}`, {
+        fetch(`${apiURL}/cust_update/${cardno}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
-require('dotenv').config();
+import { apiURL } from "./App";
 
 function SearchOptionSelect(props) {
 
@@ -28,7 +28,7 @@ function SearchOptionSelect(props) {
 
     //Interest Details from DB
     useEffect(() => {
-        fetch(`${process.env.API_URL}/cust_update/${cardno}`)
+        fetch(`${apiURL}/cust_update/${cardno}`)
             .then(res => res.json())
             .then(data => setCardNoDetail(data))
             .catch(error => console.log(error));
@@ -65,7 +65,7 @@ function SearchOptionSelect(props) {
 
     let cardNoDetailsOfCust = props.CustomerNumber;
 
-    fetch(`${process.env.API_URL}/cust_update/:cardno`, {
+    fetch(`${apiURL}/cust_update/:cardno`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-require('dotenv').config();
+import { apiURL } from "./App";
 
 function DenominationReceived(props) {
 
@@ -18,7 +18,7 @@ function DenominationReceived(props) {
 
     const cardNoDetailsOfCust = props.CustomerNumber;
 
-    fetch(`${process.env.API_URL}/cust_update/:cardno`, {
+    fetch(`${apiURL}/cust_update/:cardno`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

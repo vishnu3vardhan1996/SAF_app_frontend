@@ -15,6 +15,8 @@ if (platform === 'production') {
     disableReactDevTools();
 }
 
+const apiURL = "https://sri-abiramin-finance-business.onrender.com";
+
 function App() {
     return (<div>
         <Router>
@@ -30,5 +32,5 @@ function App() {
     </div>);
 }
 
-export { App };
+export { App, apiURL };
 

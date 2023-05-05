@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-require('dotenv').config();
+import { apiURL } from "./App";
 // import "../assets/styles.css";
 // import { SearchOptionSelect } from "./SearchOptionSelect";
 
@@ -52,7 +52,7 @@ function CustSearch() {
         setPaymentSelection(event.target.value);
     }
 
-    fetch(`${process.env.API_URL}/customer_details/:name`, {
+    fetch(`${apiURL}/customer_details/:name`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
