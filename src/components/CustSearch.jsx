@@ -51,7 +51,7 @@ function CustSearch() {
         setPaymentSelection(event.target.value);
     }
 
-    fetch('/customer_details/:name', {
+    fetch('https://sri-abiramin-finance-business.onrender.com/customer_details/:name', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
