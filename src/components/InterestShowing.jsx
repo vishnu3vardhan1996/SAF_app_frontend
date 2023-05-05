@@ -18,7 +18,7 @@ function InterestShowing(props) {
 
     useEffect(() => {
         props.InterestTransfer(latestInterestdate);
-      }, []);
+      }, [latestInterestdate]);
 
       if(!interestTakenFromDB || !interestTakenFromDB[0]) {
         lengthOfArray = -1;
