@@ -32,7 +32,7 @@ function InterestReceive(props) {
         <div>
             <button type="submit" name="addinterestbutton" onClick={handleAddInterest}>Add Interest</button> <button type="button" name="quitbutton" hidden={!quitEditable} onClick={handelQuitButton}>X</button>
         </div>
-        <form style={{marginTop: "20px"}} action="/interest_update" method="POST" hidden={interestAdd}>
+        <form style={{marginTop: "20px"}} action="https://sri-abiramin-finance-business.onrender.com/interest_update" method="POST" hidden={interestAdd}>
             <label for="card_details">Card No: <span className="required"> </span></label>
             <input id="card_details" type="text" placeholder="Enter Card No" name="cardnodetails" value={props.CustNo}/><br /><br />
             <label for="interest_rate">Interest Rate: <span className="required">* </span></label>
