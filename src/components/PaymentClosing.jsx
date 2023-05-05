@@ -13,7 +13,7 @@ function PaymentClosing() {
     }
 
     function handleCustDetails(event) {
-        navigate(`https://sri-abirami-finance-backend.onrender.com/cust_update/${cardNo}`);
+        navigate(`/cust_update/${cardNo}`);
         // event.preventDefault();
     }
 

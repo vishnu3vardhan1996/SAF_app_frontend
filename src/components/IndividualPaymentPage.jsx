@@ -75,7 +75,7 @@ function IndividualPaymentPage() {
     }
 
     useEffect(() => {
-        fetch(`https://sri-abirami-finance-backend.onrender.com/cust_update/${cardno}`)
+        fetch(`/cust_update/${cardno}`)
             .then(res => res.json())
             .then(data => setCardNoDetail(data))
             .catch(error => console.log(error));
@@ -118,7 +118,7 @@ function IndividualPaymentPage() {
     }
 
     function handletextAreaDone(textAreaValue) {
-        fetch(`https://sri-abirami-finance-backend.onrender.com/cust_update/${cardno}`, {
+        fetch(`/cust_update/${cardno}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

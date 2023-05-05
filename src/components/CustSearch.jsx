@@ -44,14 +44,14 @@ function CustSearch() {
 
     function handleSubmitOnClick() {
         // const requestBody = { payment_status: paymentSelection };
-        navigate(`https://sri-abirami-finance-backend.onrender.com/customer_details/${inputChange}`);
+        navigate(`/customer_details/${inputChange}`);
     }
 
     function handleSelectPayment(event) {
         setPaymentSelection(event.target.value);
     }
 
-    fetch('https://sri-abirami-finance-backend.onrender.com/customer_details/:name', {
+    fetch('/customer_details/:name', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
