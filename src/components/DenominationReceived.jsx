@@ -17,7 +17,7 @@ function DenominationReceived(props) {
 
     const cardNoDetailsOfCust = props.CustomerNumber;
 
-    fetch('/cust_update/:cardno', {
+    fetch('https://sri-abirami-finance-backend.onrender.com/cust_update/:cardno', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -10,7 +10,7 @@ function UserDetails() {
     const [isEditable, setIsEditable] = useState(false);
 
     useEffect(() => {
-        fetch(`/customer_details/${name}`)
+        fetch(`https://sri-abirami-finance-backend.onrender.com/customer_details/${name}`)
             .then(res => res.json())
             .then(data => setUser(data))
             .catch(error => console.log(error));

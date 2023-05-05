@@ -27,7 +27,7 @@ function SearchOptionSelect(props) {
 
     //Interest Details from DB
     useEffect(() => {
-        fetch(`/cust_update/${cardno}`)
+        fetch(`https://sri-abirami-finance-backend.onrender.com/cust_update/${cardno}`)
             .then(res => res.json())
             .then(data => setCardNoDetail(data))
             .catch(error => console.log(error));
@@ -64,7 +64,7 @@ function SearchOptionSelect(props) {
 
     let cardNoDetailsOfCust = props.CustomerNumber;
 
-    fetch('/cust_update/:cardno', {
+    fetch('https://sri-abirami-finance-backend.onrender.com/cust_update/:cardno', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
