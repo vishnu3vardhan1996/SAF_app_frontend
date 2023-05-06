@@ -15,7 +15,7 @@ const HomePage = () => {
     //     return () => clearTimeout(redirectTimer);
     // }, []);
 
-    return (navigate(`${process.env.REACT_APP_LOGIN_ROUTE}`));
+    navigate(`${process.env.REACT_APP_LOGIN_ROUTE}`)
 };
 
 export { HomePage };
