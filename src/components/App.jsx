@@ -46,13 +46,5 @@ function App() {
     </div>);
 }
 
-// REACT_APP_LOGIN_ROUTE=/login
-// REACT_APP_LOGIN_FAILURE_ROUTE=/login/failure
-// REACT_APP_CUST_DETAIL_ROUTE=/customer_details/:name
-// REACT_APP_CUST_FIND_ROUTE=/cust_search
-// REACT_APP_CUST_SEARCH_ROUTE=/search_option
-// REACT_APP_CUST_IMPORT_ROUTE=/cust_update
-// REACT_APP_CUST_IMPORT_DETAILS_ROUTE=/cust_update/:cardno
-
 export { App, apiURL, reactURL };
 
