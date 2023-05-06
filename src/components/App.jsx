@@ -20,16 +20,17 @@ if (platform === 'production') {
     disableReactDevTools();
 }
 
-// const apiURL = "https://sri-abiramin-finance-business.onrender.com";
-const apiURL = "http://localhost:3001";
-const reactURL = "http://localhost:3000";
+const apiURL = "https://sri-abiramin-finance-business.onrender.com";
+// const apiURL = "http://localhost:3001";
+// const reactURL = "http://localhost:3000";
+const reactURL = "https://sri-abirami-finance.onrender.com"
 
 function App() {
     return (<div>
         <Router>
             <Routes>
                 <Route path={`${process.env.REACT_APP_LOGIN_ROUTE}`} element={<Login />} />
-                <Route path={`${process.env.REACT_APP_DEFAULT_ROUTE}`} element={<CustomerDetails />} />
+                <Route path={`${process.env.REACT_APP_CUST_INFO_LOAD_ROUTE}`} element={<CustomerDetails />} />
                 <Route path={`${process.env.REACT_APP_SIGNUP_ROUTE}`} element={<SignUp />} />
                 <Route path={`${process.env.REACT_APP_LOGIN_FAILURE_ROUTE}`} element={<LoginFailure />} />
                 <Route path={`${process.env.REACT_APP_SIGNUP_FAILURE_ROUTE}`} element={<SignUpFailure />} />
