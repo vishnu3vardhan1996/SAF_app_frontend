@@ -25,6 +25,18 @@ body {
     line-height: 1.5em;
 }
 
+.btn_signup {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 0.25em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+  }  
+
 .required {
     color: red;
 }
