@@ -11,6 +11,7 @@ import { SignUp } from "./SignUp";
 import { Login } from "./Login";
 import { SignUpFailure } from "./SignupFailure";
 import { LoginFailure } from "./LoginFailure";
+import { HomePage } from "./HomePage";
 // import "../assets/styles.css";
 
 const platform = 'production';
@@ -29,6 +30,7 @@ function App() {
     return (<div>
         <Router>
             <Routes>
+                <Route path={`${process.env.REACT_APP_DEFAULT_ROUTE}`} element={<HomePage />} />
                 <Route path={`${process.env.REACT_APP_LOGIN_ROUTE}`} element={<Login />} />
                 <Route path={`${process.env.REACT_APP_CUST_INFO_LOAD_ROUTE}`} element={<CustomerDetails />} />
                 <Route path={`${process.env.REACT_APP_SIGNUP_ROUTE}`} element={<SignUp />} />
