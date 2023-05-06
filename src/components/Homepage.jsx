@@ -14,4 +14,4 @@ const HomePage = () => {
   return <div>Redirecting...</div>;
 };
 
-export {HomePage};
+export { HomePage };
