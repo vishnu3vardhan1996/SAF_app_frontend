@@ -2,16 +2,20 @@ import React, { useEffect } from "react";
 import { Navigate } from "react-router-dom";
 
 const HomePage = () => {
-    useEffect(() => {
-        // Redirect to login page after 2 seconds
-        const redirectTimer = setTimeout(() => {
-            <Navigate to={`${process.env.REACT_APP_LOGIN_ROUTE}`} />;
-        }, 2000);
 
-        return () => clearTimeout(redirectTimer);
-    }, []);
+    const navigate = useNavigate();
+    // useEffect(() => {
+    //     // Redirect to login page after 2 seconds
+    //     const redirectTimer = setTimeout(() => {
+    //         <Navigate to={`${process.env.REACT_APP_LOGIN_ROUTE}`} />;
+    //     }, 2000);
 
-    return <div>Redirecting...</div>;
+
+
+    //     return () => clearTimeout(redirectTimer);
+    // }, []);
+
+    return (navigate(`${process.env.REACT_APP_LOGIN_ROUTE}`));
 };
 
 export { HomePage };
