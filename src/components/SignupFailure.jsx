@@ -4,7 +4,7 @@ import { reactURL } from "./App";
 function SignUpFailure() {
     return(<div>
         <h4>Sorry, Username already taken, pls try with different username.</h4>
-        <a href={`${reactURL}/signup`} className="btn_signup">Sign Up</a>
+        <a href={`${reactURL}/signup_27031996_saf`} className="btn_signup">Sign Up</a>
     </div>)
 }
 
