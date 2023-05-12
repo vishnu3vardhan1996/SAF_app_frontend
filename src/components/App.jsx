@@ -21,10 +21,10 @@ if (platform === 'production') {
     disableReactDevTools();
 }
 
-const apiURL = "https://sri-abiramin-finance-business.onrender.com";
+const apiURL = "https://sri-abiramin-finance-backend-sandbox.onrender.com";
 // const apiURL = "http://localhost:3001";
 // const reactURL = "http://localhost:3000";
-const reactURL = "https://sri-abirami-finance.onrender.com"
+const reactURL = "https://sri-abirami-finance-frontend-sandbox.onrender.com"
 
 function App() {
     return (<div>
