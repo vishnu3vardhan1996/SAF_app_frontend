@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import { apiURL } from "./App";
+import { apiURL,reactURL } from "./App";
 // import "../assets/styles.css";
 // import { SearchOptionSelect } from "./SearchOptionSelect";
 

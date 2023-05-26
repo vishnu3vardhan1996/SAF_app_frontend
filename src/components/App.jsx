@@ -12,6 +12,7 @@ import { Login } from "./Login";
 import { SignUpFailure } from "./SignupFailure";
 import { LoginFailure } from "./LoginFailure";
 import { HomePage } from "./HomePage";
+import { ProtectedRoutes } from "./ProtectedRoutes";
 // import "../assets/styles.css";
 
 const platform = 'production';

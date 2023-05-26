@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { apiURL } from "./App";
 // import "../assets/styles.css";
 // import UserDetails from "./UserDetails";
@@ -24,8 +24,16 @@ function CustomerDetails() {
     // const amountValueForInt;
 
     const [amountValueForInt, setAmountValueForInt] = useState();
+    const [authorization, setAuthorization] = useState();
 
+    useEffect(() => {
+        fetch(`${apiURL}/cust_bio_auth`)
+            .then(res => res.json())
+            .then(data => setAuthorization(data))
+            .catch(error => console.log(error));
+    }, []);
 
+    console.log(authorization);
 
     function handletwoThoDe(event) {
         setTwoThoDe(event.target.value);

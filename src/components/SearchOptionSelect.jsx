@@ -65,7 +65,7 @@ function SearchOptionSelect(props) {
 
     let cardNoDetailsOfCust = props.CustomerNumber;
 
-    fetch(`${apiURL}/cust_update/:cardno`, {
+    fetch(`${apiURL}/cust_update/${cardno}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
