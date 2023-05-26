@@ -31,7 +31,7 @@ function Login() {
 
         axios(configuration)
             .then((result) => {
-                alert(result.data.token);
+                // alert(result.data.token);
                 let token = result.data.token;
                 cookies.set("TOKEN", token, {
                     path: "http://localhost:3001/",
